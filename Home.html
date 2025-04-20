@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HackForge</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #fff;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      nav {
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      nav .logo {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #1a1a1a;
+        margin-bottom: 0.5rem;
+      }
+
+      nav .logo span {
+        color: #5542f6;
+      }
+
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: #555;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li a:hover {
+        color: #f97316;
+      }
+
+      nav ul li .profile-icon {
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: color 0.3s ease;
+      }
+
+      nav ul li .profile-icon:hover {
+        color: #f97316;
+      }
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+        gap: 2rem;
+      }
+
+      .hero-left {
+        max-width: 100%;
+        text-align: center;
+      }
+
+      .hero-left h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+      }
+
+      .hero-left p {
+        font-size: 1.05rem;
+        color: #555;
+        margin-bottom: 2rem;
+      }
+
+      .hero-left .btn-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .hero-left .btn-orange {
+        background-color: #f97316;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .hero-left .btn-orange:hover {
+        background-color: #ea580c;
+      }
+
+      .hero-left .btn-link {
+        color: #f97316;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .hero-left .btn-link:hover {
+        text-decoration: underline;
+      }
+
+      .hero-right {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hero-right img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      @media (min-width: 768px) {
+        .hero {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5rem 4rem;
+          text-align: left;
+        }
+
+        .hero-left {
+          max-width: 50%;
+          text-align: left;
+        }
+
+        .hero-left .btn-group {
+          flex-direction: row;
+          justify-content: flex-start;
+        }
+
+        .hero-right {
+          max-width: 50%;
+        }
+      }
+
+      footer {
+        text-align: center;
+        padding: 2rem;
+        color: #aaa;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">Hack<span>Forge</span></div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Search</a></li>
+        <li><a href="#" class="profile-icon" title="Profile">👤</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <!-- Left -->
+      <div class="hero-left">
+        <h1>Hackathon-as-a-Service<br />Platform</h1>
+        <p>
+          Streamline your hackathon experience with our comprehensive platform.
+          Manage registrations, form teams, submit projects.
+        </p>
+        <div class="btn-group">
+          <a href="login.html" class="btn-orange">Join Now</a>
+          <a href="Hero2/inde.html" class="btn-link">Get Started</a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="hero-right">
+        <img src="Hero1.jpg" alt="Hackathon Platform" />
+      </div>
+    </section>
+
+    <footer>&copy; 2025 Hackrix. All rights reserved.</footer>
+
+    <!-- Optional JavaScript -->
+  </body>
+</html>

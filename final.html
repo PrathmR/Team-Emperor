@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon UI</title>
+  <style>
+    body {
+      background-color: #fff;
+      color: #000;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .container {
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+      background-color: white;
+    }
+    .header, .section, .form-row {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin: 10px 0;
+      padding: 15px;
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+    .nav button {
+      background-color: transparent;
+      border: 1px solid #5542f6;
+      color: #5542f6;
+      padding: 5px 10px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .banner {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .banner img {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .banner-text {
+      font-size: 1.5em;
+      margin-top: 10px;
+    }
+    .button-purple {
+      background-color: #5542f6;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      color: #000;
+    }
+    .flex-row {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .flex-col {
+      flex: 1;
+      min-width: 250px;
+    }
+    .label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .prize-img {
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <button>Join Hackathon</button>
+      <button>Host</button>
+      <button>Learn</button>
+    </div>
+
+    <div class="banner">
+      <img src="Hack1.jpg" alt="Banner Image">
+      <div class="banner-text">Welcome to the Ultimate Hackathon 2025 - Innovate, Code, Compete!</div>
+    </div>
+
+    <div class="flex-row">
+      <div class="flex-col header">Explore cutting-edge tech challenges, collaborate with global minds, and win exciting prizes. Open for all developers, designers, and innovators!</div>
+      <div class="flex-col header"><button class="button-purple">Register</button></div>
+    </div>
+
+    <div class="section">
+      <div class="label">Dates and Deadlines</div>
+      <label class="label">Start Date*</label>
+      <input type="date" value="2025-06-01">
+      <label class="label">Submission Deadline</label>
+      <input type="date" value="2025-06-20">
+      <label class="label">End Date*</label>
+      <input type="date" value="2025-06-25">
+    </div>
+
+    <div class="section">
+      <div class="label">Guidelines & Rules *</div>
+      <textarea rows="5" readonly>1. All code must be written during the event.
+2. Teams can have up to 4 members.
+3. Use of public APIs and libraries is allowed.
+4. Submissions must be made before the deadline.
+5. Respect and collaborate ethically with fellow participants.</textarea>
+    </div>
+
+    <div class="section">
+      <div class="label">Judging Criteria</div>
+      <textarea rows="4" readonly>1. Innovation & Creativity
+2. Technical Complexity
+3. Practical Implementation
+4. UI/UX Design
+5. Presentation & Pitch Quality</textarea>
+    </div>
+
+    <div class="section">
+      <div class="label">Prizes & Certificates</div>
+      <div class="flex-row">
+        <div class="flex-col">
+          <input type="text" value="1st Place - $1000">
+          <img src="https://via.placeholder.com/100x100.png?text=Gold+Trophy" alt="1st Prize" class="prize-img">
+        </div>
+        <div class="flex-col">
+          <input type="text" value="2nd Place - $500">
+          <img src="https://via.placeholder.com/100x100.png?text=Silver+Trophy" alt="2nd Prize" class="prize-img">
+        </div>
+        <div class="flex-col">
+          <input type="text" value="3rd Place - $250">
+          <img src="https://via.placeholder.com/100x100.png?text=Bronze+Trophy" alt="3rd Prize" class="prize-img">
+        </div>
+        <div class="flex-col">
+          <input type="text" value="Certificates for all participants">
+          <img src="https://via.placeholder.com/100x100.png?text=Certificate" alt="Certificate" class="prize-img">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
