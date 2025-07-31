@@ -12,6 +12,10 @@ HackForge enables:
 With a clean and distraction-free interface, HackForge is built to empower the hackathon community.
 
 ---
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/41624892-76be-4b30-8f31-11ddb6fc2aa0" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6fd6e642-cde0-41b0-a23f-ecdf6e60d464" />
+
+
 
 ## 🛠 Tech Stack
 
